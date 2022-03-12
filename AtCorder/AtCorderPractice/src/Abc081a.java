@@ -13,5 +13,6 @@ public class Abc081a {
 
 			System.out.println(sum);
 		}
+		
 	}
 }
