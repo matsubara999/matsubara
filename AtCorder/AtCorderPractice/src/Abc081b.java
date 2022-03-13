@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Abc081b {
 	public static void main(String[] args) {
 		List<Integer> evens = new ArrayList<>();
-		Integer result = 0;
-		Integer num;
+		int result = 0;
+		int num;
 		try (Scanner scan = new Scanner(System.in)) {
 			num = scan.nextInt();
 			// 標準入力nの数だけ標準入力aを取得する
@@ -22,7 +22,6 @@ public class Abc081b {
 			}
 
 		}
-
 		for (int i = 0; i < num; i++) {
 			for (int x = 0; x < evens.size(); x++) {
 				Integer even = evens.get(x);
