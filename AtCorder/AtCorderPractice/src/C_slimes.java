@@ -20,6 +20,7 @@ public class C_slimes {
 	private C_slimes() {
 		try (Scanner scan = new Scanner(System.in)) {
 			N = scan.nextInt();
+
 			S = scan.next();
 
 		}
@@ -31,6 +32,7 @@ public class C_slimes {
 	private void exec() {
 		String preS = "";
 		int result = 0;
+
 		for (int i = 0; i < N; i++) {
 
 			String currentS = String.valueOf(S.charAt(i));
