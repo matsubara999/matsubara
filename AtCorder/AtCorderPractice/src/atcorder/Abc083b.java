@@ -1,3 +1,4 @@
+package atcorder;
 
 import java.util.Scanner;
 

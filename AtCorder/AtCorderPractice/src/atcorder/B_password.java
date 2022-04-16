@@ -1,3 +1,6 @@
+package atcorder;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -33,17 +36,22 @@ public class B_password {
 	 * 文字列O,Eから1文字ずつ取り出し、結合したものを出力する。
 	 */
 	private void exec() {
-		String result = "";
+		StringBuilder result = new StringBuilder();
 
-		for (int i = 0; i < O.length(); i++) {
-			result = result + String.valueOf(O.charAt(i));
+		List<String> listO = Arrays.asList(O.split(""));
+		List<String> listE = Arrays.asList(E.split(""));
 
-			if (i < E.length()) {
-				result = result + String.valueOf(E.charAt(i));
+		int i = 0;
+		for (String s : listO) {
+			result.append(s);
+
+			if (i < listE.size()) {
+				result.append(listE.get(i));
 			}
 
+			i++;
 		}
-		System.out.println(result);
+		System.out.println(result.toString());
 
 	}
 
